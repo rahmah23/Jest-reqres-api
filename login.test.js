@@ -1,7 +1,6 @@
-const supertest = require('supertest');
 const request = require('supertest');
 
-const api = supertest('https://reqres.in');
+const api = request('https://reqres.in');
 const path = '/api/login';
 
 const validCredential = {
